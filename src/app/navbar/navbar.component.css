@@ -1,0 +1,27 @@
+.navbar-container{
+  width:100vw;
+  height:4rem;
+  display:flex;
+  background: skyblue;
+  justify-items: space-between;
+  align-items: center;
+  padding:1rem 3rem;
+}
+.brandname{
+  font-size:1.8rem;
+  color:gray;
+  font-weight: 800;
+}
+.menu{
+  display:flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex:1;
+}
+.menu > a{
+  margin:0 3rem;
+  text-decoration: none;
+  color:gray;
+  font-size:1.2rem;
+
+}
