@@ -3,6 +3,9 @@
   <div [hidden]="showMyName">{{name}}</div>
   <p>{{84+90}}</p>
   <h5>{{getSlogan()}}</h5>
+  <div class="image-wrapper" [hidden]="hideImage">
+    <button type="button" class="img-btn" (click)="closeImage()">x</button>
   <img [src]="imgSrc" class="myimg">
+</div>
 
 </div>

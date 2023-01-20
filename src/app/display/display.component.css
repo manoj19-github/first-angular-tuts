@@ -1,3 +1,16 @@
+.image-wrapper{
+  position:relative;
+  top:0;
+  left:0;
+}
+.img-btn{
+  position: absolute;
+  top:0%;
+  right:40%;
+  font-size: 2rem;
+  color:red;
+  z-index:5;
+}
 .myimg{
   width:60vw;
   height:50vh;
