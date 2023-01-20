@@ -1,5 +1,5 @@
 <div class="search-div">
   <span><b>Search : </b></span>
   <input type="text" class="inputbody"  [(ngModel)]="searchValue">
-  <span>You Search For : {{searchValue}}</span>
+  <span *ngIf="searchValue !==''">You Search For : {{searchValue}}</span>
 </div>

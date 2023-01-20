@@ -10,37 +10,37 @@ export class ProductsComponent {
     {
       name: 'manoj Santra',
       role: 'MERN stack developer',
-      salary: 25000,
+      salary: 30000,
       id: 1,
     },
     {
       name: 'manoj Santra',
       role: 'MERN stack developer',
-      salary: 25000,
+      salary: 30000,
       id: 2,
     },
     {
       name: 'manoj Santra',
       role: 'MERN stack developer',
-      salary: 25000,
+      salary: 30000,
       id: 3,
     },
     {
       name: 'manoj Santra',
       role: 'MERN stack developer',
-      salary: 25000,
+      salary: 30000,
       id: 4,
     },
     {
       name: 'manoj Santra',
       role: 'MERN stack developer',
-      salary: 25000,
+      salary: 30000,
       id: 5,
     },
     {
       name: 'manoj Santra',
       role: 'MERN stack developer',
-      salary: 25000,
+      salary: 30000,
       id: 6,
     },
   ];
