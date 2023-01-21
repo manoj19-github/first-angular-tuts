@@ -1,0 +1,6 @@
+<div class="refWrapper">
+  <input type="text" #myRef (keyup)="0">
+  <button (click)="sayHello(myRef)" class="p-2 border border-gray-500">say hello</button>
+  <p>{{myRef.value}}</p>
+
+</div>

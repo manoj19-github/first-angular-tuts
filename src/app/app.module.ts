@@ -9,6 +9,9 @@ import { SeaarchComponent } from './seaarch/seaarch.component';
 import { ProductsComponent } from './products/products.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SelectorComponent } from './selector/selector.component';
+import { SearchProductComponent } from './search-product/search-product.component';
+import { ReferenceComponent } from './reference/reference.component';
+import { CustomerListComponent } from './customer-list/customer-list.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +23,9 @@ import { SelectorComponent } from './selector/selector.component';
     ProductsComponent,
     ProfileComponent,
     SelectorComponent,
+    SearchProductComponent,
+    ReferenceComponent,
+    CustomerListComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],

@@ -13,9 +13,14 @@ interface IProducts {
 })
 export class ProductsComponent {
   selectedProducts: string = 'All';
+  searchText: string = '';
   onFilterProductRadioChange(data: string) {
     this.selectedProducts = data;
     console.log('selectedProducts: ' + this.selectedProducts);
+  }
+  onSearchText(data: string) {
+    this.searchText = data;
+    console.log('searchText: ' + this.searchText);
   }
   products: IProducts[] = [
     {
