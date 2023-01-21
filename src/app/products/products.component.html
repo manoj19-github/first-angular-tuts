@@ -1,10 +1,9 @@
-<div *ngFor="let item of products;let i = index">
-  <p>{{i}}</p>
-  <p>----------------------</p>
-  <p [ngStyle]="{color:i % 2==0 ? 'green':'red'}">emp id : {{item.id}}</p>
-  <p>emp Name : {{item.name}} </p>
-  <p>emp role : {{item.role}}</p>
-  <p>salary : {{item.salary}}</p>
-  <p>----------------------</p>
+<div>
+  <app-selector (filteredRadioButtonSelectionChanged)="onFilterProductRadioChange($event)" ></app-selector>
+  <ng-container  *ngFor="let profile of products;let i = index">
+    <div  *ngIf="selectedProducts === 'All' || selectedProducts === profile.role " >
+      <app-profile  [profile]="profile" [i]="i"></app-profile>
+    </div>
+  </ng-container>
 
 </div>

@@ -1,27 +1,38 @@
 import { Component } from '@angular/core';
 
+interface IProducts {
+  name: string;
+  role: string;
+  salary: number;
+  id: number;
+}
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.css'],
 })
 export class ProductsComponent {
-  products = [
+  selectedProducts: string = 'All';
+  onFilterProductRadioChange(data: string) {
+    this.selectedProducts = data;
+    console.log('selectedProducts: ' + this.selectedProducts);
+  }
+  products: IProducts[] = [
     {
       name: 'manoj Santra',
-      role: 'MERN stack developer',
+      role: 'spring boot developer',
       salary: 30000,
       id: 1,
     },
     {
       name: 'manoj Santra',
-      role: 'MERN stack developer',
+      role: 'django developer',
       salary: 30000,
       id: 2,
     },
     {
       name: 'manoj Santra',
-      role: 'MERN stack developer',
+      role: 'android developer',
       salary: 30000,
       id: 3,
     },
@@ -33,7 +44,7 @@ export class ProductsComponent {
     },
     {
       name: 'manoj Santra',
-      role: 'MERN stack developer',
+      role: 'django developer',
       salary: 30000,
       id: 5,
     },

@@ -7,6 +7,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { DisplayComponent } from './display/display.component';
 import { SeaarchComponent } from './seaarch/seaarch.component';
 import { ProductsComponent } from './products/products.component';
+import { ProfileComponent } from './profile/profile.component';
+import { SelectorComponent } from './selector/selector.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { ProductsComponent } from './products/products.component';
     DisplayComponent,
     SeaarchComponent,
     ProductsComponent,
+    ProfileComponent,
+    SelectorComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
