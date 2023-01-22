@@ -12,6 +12,12 @@ import { SelectorComponent } from './selector/selector.component';
 import { SearchProductComponent } from './search-product/search-product.component';
 import { ReferenceComponent } from './reference/reference.component';
 import { CustomerListComponent } from './customer-list/customer-list.component';
+import { ViewChildComponent } from './view-child/view-child.component';
+import { View2ComponentComponent } from './view2-component/view2-component.component';
+import { CustomDirectiveComponent } from './custom-directive/custom-directive.component';
+import { SetBackgroundDirective } from './custom-directive/setbackground.directive';
+import { MyDirectiveDirective } from './custom-directive/my-directive.directive';
+import { MyHostDirective } from './custom-directive/my-host.directive';
 
 @NgModule({
   declarations: [
@@ -26,6 +32,12 @@ import { CustomerListComponent } from './customer-list/customer-list.component';
     SearchProductComponent,
     ReferenceComponent,
     CustomerListComponent,
+    ViewChildComponent,
+    View2ComponentComponent,
+    CustomDirectiveComponent,
+    SetBackgroundDirective,
+    MyDirectiveDirective,
+    MyHostDirective,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
