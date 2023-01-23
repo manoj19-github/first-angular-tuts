@@ -18,6 +18,9 @@ import { CustomDirectiveComponent } from './custom-directive/custom-directive.co
 import { SetBackgroundDirective } from './custom-directive/setbackground.directive';
 import { MyDirectiveDirective } from './custom-directive/my-directive.directive';
 import { MyHostDirective } from './custom-directive/my-host.directive';
+import { Comp1Component } from './comp1/comp1.component';
+import { Comp2Component } from './comp2/comp2.component';
+import { CustomService } from './services/myservice.service';
 
 @NgModule({
   declarations: [
@@ -38,9 +41,11 @@ import { MyHostDirective } from './custom-directive/my-host.directive';
     SetBackgroundDirective,
     MyDirectiveDirective,
     MyHostDirective,
+    Comp1Component,
+    Comp2Component,
   ],
   imports: [BrowserModule, FormsModule],
-  providers: [],
+  providers: [CustomService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
