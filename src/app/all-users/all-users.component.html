@@ -1,0 +1,9 @@
+<div class="user-container">
+  <h2 class="user-title">All User List</h2>
+  <div class="user-list" *ngFor="let user of userList">
+    <p>id:{{user.id}}</p>
+    <p>Name:  {{user.name}}</p>
+    <p>email:{{user.email}}</p>
+    <button type="button" (click)="showUserDetails(user)">Show Details</button>
+  </div>
+</div>

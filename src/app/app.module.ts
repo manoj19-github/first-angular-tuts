@@ -21,6 +21,9 @@ import { MyHostDirective } from './custom-directive/my-host.directive';
 import { Comp1Component } from './comp1/comp1.component';
 import { Comp2Component } from './comp2/comp2.component';
 import { CustomService } from './services/myservice.service';
+import { AllUsersComponent } from './all-users/all-users.component';
+import { userService } from './services/users.service';
+import { UserDetailsComponent } from './user-details/user-details.component';
 
 @NgModule({
   declarations: [
@@ -43,9 +46,11 @@ import { CustomService } from './services/myservice.service';
     MyHostDirective,
     Comp1Component,
     Comp2Component,
+    AllUsersComponent,
+    UserDetailsComponent,
   ],
   imports: [BrowserModule, FormsModule],
-  providers: [CustomService],
+  providers: [CustomService, userService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
